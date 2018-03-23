@@ -1,0 +1,27 @@
+<?php
+	require_once('../php/RNA.class.php');
+
+	session_start();
+	if(isset($_SESSION['rnaList']))
+	{
+		$rnaList = $_SESSION['rnaList'];
+	}
+	else
+	{
+		$rnaList = array();
+	}
+?>
+
+<div id="rnaList">
+	<ul>
+		<?php
+			foreach ($rnaList as $rna) 
+			{				
+				$name = explode("|",$rna->header)[0]; 
+		?>
+				<li id="arnlist<?php echo $rna->id; ?>" onclick="switchListSelection(<?php echo $rna->id; ?>)" class="rnaUnselected"><?php echo $name; ?> </li>
+		<?php	
+			}
+		?>
+	</ul>
+</div>

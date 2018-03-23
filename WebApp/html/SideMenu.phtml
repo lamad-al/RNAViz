@@ -1,0 +1,42 @@
+<div id="menuSectionSeparator"></div>
+
+<div id="sideMenuARNList">
+	<div id="addSequence">
+		<a href="#" id="addSequenceBtn" class="button button-rounded button-action" onclick="inputShowHide()">Add Sequence(s)</a>
+	</div>
+
+	<div id="RNAListTitle">Sequence list</div>
+	<div id="rnaList-content-wrapper">
+		<ul></ul>
+	</div>
+	<div class="sidemenuSubTitle">Analysis Type</div>
+		<select id="analType" class="dropdownSide">
+			<option>Global analysis</option>
+		</select>
+	<div class="sidemenuSubTitle">Motif conservation threshold</div>
+		<select id="analThresh" class="dropdownSide">
+			<option>10%</option>
+			<option>20%</option>
+			<option>30%</option>
+			<option>40%</option>
+			<option>50%</option>
+			<option>60%</option>
+			<option>70%</option>
+			<option>80%</option>
+			<option>90%</option>
+			<option>100%</option>
+		</select>
+	<div id="rnaList-actionPanel">
+		<a href="#" id="selectButton" class="button button-rounded button-action" onclick="selectAll()">Select All</a>
+		<a href="#" id="unselectButton" class="button button-rounded button-action" onclick="clearSelection()">Unselect All</a>
+	</div>
+	<div>
+		<a href="#" id="drawButton" class="button button-rounded button-action" onclick="startAnalysis()">Launch Analysis</a>
+	</div>
+<!-- getSelectedList() -->
+	<div>
+		<a href="#" id="deleteButton" class="button button-rounded button-action button-caution" onclick="deleteSequence()">Delete Selected</a>
+		<a href="#" id="clearButton" class="button button-rounded button-action button-caution" onclick="clearList()">Delete All</a>
+	</div>
+</div>
+

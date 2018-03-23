@@ -1,0 +1,45 @@
+#master {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    position: absolute;
+}
+
+#main-content-wrapper {
+    width: 1300px;
+    height: 650px;
+    padding-top: 60px;
+    padding-left: 430px;
+}
+
+/* D3 */
+.node circle {
+    fill: #fff;
+    stroke: steelblue;
+    stroke-width: 3px;
+}
+
+.node text { 
+    font: 12px sans-serif; 
+}
+
+.node--internal text {
+    text-shadow: 0 1px 0 #fff, 0 -1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff;
+}
+
+.link {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 2px;
+}
+
+svg text {
+    pointer-events: none;
+}
+
+/* End D3 */

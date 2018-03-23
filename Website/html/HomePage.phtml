@@ -1,0 +1,71 @@
+<html>
+	<head>
+		<!-- javascript -->
+		<script type="text/javascript" src="../javascript/jquery/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="../javascript/jquery/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="../javascript/Master.js"></script>
+		<script type="text/javascript" src="../javascript/slick.js"></script>
+		<!-- css -->
+		<link rel="stylesheet" type="text/css" href="../css/reset.css">
+		<link rel="stylesheet" type="text/css" href="../css/master.css">
+		<link rel="stylesheet" type="text/css" href="../css/homePage.css">
+		<link rel="stylesheet" type="text/css" href="../css/slick.css">
+	</head>
+	<body>
+		<div id="mainTitle">
+			RNAFamViz
+		</div>
+		<div class="topnav" id="myTopnav">
+			<a href="HomePage.phtml">HOME</a>
+			<a href="Manual.phtml">MANUAL</a>
+			<a href="../../WebApp/html/ApplicationMaster.phtml" target="_blank">SOFTWARE</a>
+			<a href="Contact.phtml">ABOUT</a>
+  			<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+		</div>
+		<div id="mainContent">
+			<div id="leftSection">
+				<div id="leftSectionMain">
+					<img class="mainImage" src="../images/dendromini.png" />
+				</div>
+
+				<div id="leftSectionAlts" class="multiItemSlider">
+					<div class="altViews">
+						<img class="altImages" src="../images/inputpanel.png" />
+					</div>
+					<div class="altViews">
+						<img class="altImages" src="../images/listmenu.png" />
+					</div>
+					<div class="altViews">
+						<img class="altImages" src="../images/nodedetails.png" />
+					</div>
+					<div class="altViews">
+						<img class="altImages" src="../images/types.png" />
+					</div>
+					<div class="altViews">
+						<img class="altImages" src="../images/btns.png" />
+					</div>
+				</div>
+			</div>
+			<div id="rightSection">
+				<div id="rightSectionTitle">
+					RNAFamViz base functions
+				</div>
+				<div id="rightSectionContent">
+					<div class="subTitleLeft">Add sequences</div>
+						To add a sequence you need to click the "Add sequence" button is the top left corner of the main application screen.
+						Sequences must be in the arc-annotated format: first line starts with > and following is the sequence header. Next line is the RNA Sequence and then the secondary structure inforamtion. 
+						You can add multitude sequences at the same time. The sequences will be added to the list in the side menu.
+					<div class="subTitleLeft">Delete sequences</div>
+						To delete sequences, you can click on those you want deleted and click the "Delete selected" button to remove them. If you want to clear the whole list, the button "Delete all" will do it.
+						The buttons "Select All" and "Unselect All" are used to make this easier when working with multiple sequences.
+					<div class="subTitleLeft">Launch analysis</div>
+						Clicking on the "Launch Analysis" button will send all the sequences in the list to be analysed. A dendrogram will be produced and shown in the program's main view panel. You can relaunch 
+						a new analysis with different sequences by changing the list and reclicking the button, this will overwrite the previously shown reuslt. 
+					<div class="subTitleLeft">Show nodes and leaves details</div>
+						To show nodes and leaves details such as percentage, variance or score analysis, simply click on the circle node on the side of a node's  name. The informations will show in the bottom left
+						corner of the screen. Leaves have green names and node have red names. 
+
+				</div>
+			</div>
+	</body>
+</html>

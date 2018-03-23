@@ -1,0 +1,37 @@
+#inputPanel 
+{
+    width: 752px; 
+    top:30%;
+    left:30%; 
+    display: none; 
+}
+
+#input-content-wrapper
+{
+    padding-bottom: 10px;
+}
+
+#inputPanelHide
+{
+    background-image: url("../images/X_sign.png");
+    width: 25px;
+    height: 25px;
+
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+
+    position: absolute;
+    top: 5px;
+    right: 5px;
+
+    cursor: pointer;
+}
+
+#inputSubmit
+{
+    cursor: pointer;
+}
+
+#inputTextArea {
+    max-width: 732px;
+}

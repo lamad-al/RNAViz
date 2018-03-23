@@ -1,0 +1,78 @@
+<html>
+	<head>
+		<!-- javascript -->
+		<script type="text/javascript" src="../javascript/jquery/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="../javascript/jquery/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="../javascript/ajax.js"></script>
+		<script type="text/javascript" src="../javascript/dragable.js"></script>
+		<script src="http://d3js.org/d3.v3.min.js"></script>
+
+
+		<script type="text/javascript" src="../javascript/sidemenu.js"></script>
+		<script type="text/javascript" src="../javascript/input.js"></script>
+		<script type="text/javascript" src="../javascript/master.js"></script>
+		<script type="text/javascript" src="../javascript/buttons.js"></script>
+		<script type="text/javascript" src="../javascript/dendrogram.js"></script>
+
+		<!-- css -->
+		<link rel="stylesheet" type="text/css" href="../css/reset.css">
+		<link rel="stylesheet" type="text/css" href="../css/master.css">
+		<link rel="stylesheet" type="text/css" href="../css/dragable.css">
+
+		<link href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="../css/menu.css">
+		<link rel="stylesheet" type="text/css" href="../css/input.css">
+		<link rel="stylesheet" type="text/css" href="../css/buttons.css">
+		<link rel="stylesheet" type="text/css" href="../css/dendrogram.css">
+	</head>
+	<body>
+		<div id="master">
+			<div id="menu" class="sidenav">
+				<div id="menu-content-wrapper">	
+				</div>		
+			</div>
+
+			<div id="menuHeader">
+				<div id="menuShowHide" class="menuHamburger" onclick="switchNav()">
+					<img src="../images/HamburgerOpen.png" id="hamburgerImage" />
+				</div>
+				<div id="menuTitle" class="menutitle">
+					RNAFamViz
+				</div>
+			</div>
+			<div id="main">
+				<div id="main-content-wrapper">
+				</div>
+				<div id="tree-container">
+					
+				</div>
+
+				<div id="dendroLeftPanel" class="dendroPanel">
+					<div class="dendroPanelTitle">
+						Selected Node:
+					</div>
+					<div class="dendroPanelContent">
+						<span id="subTitle">Percentage Values</span>
+						<ul id="dendroListLeft"></ul>
+					</div>
+					<div class="dendroPanelContent">
+						<span id="subTitle2">Variance Values</span>
+						<ul id="dendroListRight"></ul>
+					</div>
+			</div>
+		</div>
+			
+
+
+			<div id="inputPanel" class="dragable">
+				<div id="inputPanelHeader" class="dragableHeader">
+					RNA Input Panel
+					<div id="inputPanelHide" onclick="inputHide()"></div>
+				</div>
+				<div id="input-content-wrapper">
+					
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,180 @@
+/* The side navigation menu */
+#menu-content-wrapper {
+    color: #ffffff;
+    text-align: center;
+    padding-top: 1.5%;
+}
+
+.sidenav 
+{
+    height: calc(100% - 3px);
+    width: 343px;
+    position: fixed;
+    float: left;
+    z-index: 2;
+    background-color: 93C178;
+    overflow-x: hidden;
+    transition: 0.5s; 
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
+}
+
+/* Side Menu Header */
+#menuHeader {
+    width: 340px;
+}
+
+.menuHamburger {
+    position: fixed;
+    float: left;
+    background-color: white;
+    z-index: 2;
+    height: 52px;
+    width: 60px;
+    left: 0px;
+    border-bottom: 3px solid black;
+    padding: 5px 0 0 12px;
+}
+
+#hamburgerImage {
+    vertical-align: middle;
+    height: 80%;
+    width: 80%;
+}
+
+.menuTitle {
+    width: 283px;
+    height: 57px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 24px;
+    font-family: Trebuchet MS;
+    letter-spacing: 5px;
+    left: 60px;
+    top: 0;
+    position: fixed;
+    z-index: 200;
+    background: white;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+}
+/* Side Menu Header END */
+
+/* Add sequences section */
+#inputSection {
+    width: 100%;
+    height: 80px;
+    border-bottom: 3px solid black;
+    padding-top: 55px;
+    background: white;
+}
+
+#addSequenceimage {
+    margin: 10px 0 0 45px;
+    width: 60px;
+    height: 60px;
+    float: left;
+    cursor: pointer; 
+    cursor: hand;
+}
+
+#addSequenceTitle {
+    font-size: 25px;
+    color: black;
+    height: 80px;
+    line-height: 80px;
+    cursor: pointer; 
+    cursor: hand;
+    min-width: 343px;
+}
+/* Add sequences section END */
+
+/* Side Menu RNA List */
+.rnaUnselected, .rnaSelected {
+    padding: 3px;
+    margin: 2px;
+    font-weight: bold;
+    width: 200px;
+    color: black;
+    font-size: 18px;
+    min-width: 150px;
+    margin-left: 5px;
+}
+
+.rnaUnselected
+{
+    border: 3px solid darkslategrey;
+    cursor: pointer; 
+    cursor: hand;
+}
+
+.rnaSelected
+{
+    background: forestgreen;
+    cursor: pointer; 
+    cursor: hand;
+}
+
+#rnaList {
+    margin-top: 20px;
+}
+
+#RNAListTitle {
+    font-size: 25px;
+    color: black;
+    margin-top: 20px;
+    min-width: 343px;
+}
+/* Side Menu RNA List END */
+
+/* Side Menu draw Options */
+#analType {
+
+}
+
+#analThresh {
+    margin-bottom: 20px;
+}
+
+.sidemenuSubTitle{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+    min-width: 343px;
+}
+
+.dropdownSide {
+    width: 120px;
+}
+
+#drawButton, #deleteButton, #clearButton, #selectButton, #unselectButton {
+    margin-top: 20px;
+}
+
+#analysisTypeDropdownFirst {
+    margin-top: 45px;
+}
+
+#analysisTypeDropdownSecond {
+    margin: 40px 0 25px 0;
+}
+
+#menuSectionSeparator {
+    width: ;
+    border: 2px solid black;
+}
+
+#rnaList ul {
+    overflow: auto;
+    height: 315px;
+    width: 242px;
+    margin: auto;
+    border: solid 2px black;
+}
+
+#addSequence {
+    margin-top: 80px;
+}
+
+/* Side Menu draw Options END*/
